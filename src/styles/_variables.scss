@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel:700');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+
+// Variables
+$numeralFont: 'Marvel';
+$wordFont: 'Ropa Sans';
+$wordFontSize: 2.2rem;
+$wordFontSizeReallySmall: 2rem;
+$maincolor: #222;
+$mainBG: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+
+
+// Mixins
+@mixin vertical-align () {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ }
+
+ @mixin centerer () {
+  // .parent { position:relative; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+/* Debug colors */
